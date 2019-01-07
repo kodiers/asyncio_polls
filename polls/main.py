@@ -2,9 +2,9 @@ from aiohttp import web
 import aiohttp_jinja2
 import jinja2
 
-from .settings import config
-from .db import init_pg, close_pg
-from .routes import setup_routes
+from polls.settings import config
+from polls.db import init_pg, close_pg
+from polls.routes import setup_routes
 
 
 app = web.Application()
